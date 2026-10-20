@@ -5631,162 +5631,6 @@ body.question-scene-body { background: #000; }
 /* Một nhịp khởi động cánh quạt với máy bay độc lập khỏi cảnh nền. */
 body > .share-aircraft-stand.share-takeoff {isolation:isolate;}
 </style>
-<style id="tiny-shop-next-style">
-/* Cảnh gian hàng tiếp nối, không chỉnh CSS các cảnh cũ. */
-
-
-
-
-@keyframes shopSkyDrift{to{background-position:65px -32px,14px 28px}}
-
-
-
-
-#shop-tiny-host{position:absolute;left:7%;top:19%;width:260px;height:190px;z-index:9;display:flex;align-items:center;justify-content:center;pointer-events:none;--shop-eye:76px}
-#shop-tiny-host #khung-mat{display:flex!important;position:relative!important;width:max-content!important;height:calc(var(--shop-eye) + 28px)!important;gap:22px!important;align-items:flex-start!important;justify-content:center!important;opacity:1!important;visibility:visible!important;transform:none;animation:none!important;transition:none!important;will-change:transform;isolation:isolate}
-#shop-tiny-host #khung-mat .truc-x{position:relative!important;width:var(--shop-eye)!important;height:calc(var(--shop-eye) + 30px)!important;flex:0 0 var(--shop-eye)!important;transform:translate(0,0) rotate(0deg)!important;transform-origin:50% 50%!important;animation:none!important;transition:transform .65s cubic-bezier(.2,.8,.2,1)!important;opacity:1!important;visibility:visible!important}
-#shop-tiny-host #khung-mat .con-mat{position:relative!important;display:block!important;width:var(--shop-eye)!important;height:var(--shop-eye)!important;overflow:hidden!important;transform:scaleY(1)!important;transform-origin:50% 50%!important;animation:none!important;transition:transform .18s ease-in-out!important;border:0!important;border-radius:25%!important;background:linear-gradient(145deg,#a4ffff 0%,#0bf0e9 45%,#00d5e5 93%)!important;box-shadow:0 0 20px rgba(0,255,255,.59),0 0 36px rgba(0,255,255,.16),inset 0 0 11px rgba(255,255,255,.38)!important;opacity:1!important;visibility:visible!important;filter:none!important;clip-path:none!important}
-#shop-tiny-host #khung-mat .con-mat.reality-morphing{background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
-#shop-tiny-host #khung-mat .reality-one-piece-reflections{opacity:0!important;transition:opacity .4s ease!important}
-#shop-tiny-host #khung-mat .ma-hong{display:block!important;position:absolute!important;top:calc(var(--shop-eye) + 5px)!important;bottom:auto!important;left:50%!important;transform:translateX(-50%)!important;color:#ffa4ca!important;text-shadow:0 0 10px #fd89bf!important;font-size:clamp(12px,1.5vw,19px)!important;opacity:.9!important;letter-spacing:2px!important;z-index:4!important;transition:none!important}
-#shop-tiny-host #khung-mat #moi-robot,#shop-tiny-host #khung-mat .mat-cong,#shop-tiny-host #khung-mat .reference-wink-svg,#shop-tiny-host #khung-mat .question-eye-wink,#shop-tiny-host #khung-mat .tiny-folding-smile-svg{display:none!important;opacity:0!important}
-#shop-tiny-host.shop-tracking #khung-mat .truc-x{transform:translate(var(--follow-x,0px),var(--follow-y,0px)) rotate(var(--follow-a,0deg))!important}
-#shop-tiny-host.shop-blinking #khung-mat .con-mat{transform:scaleY(.075)!important}
-
-.shop-butterfly .bf-body{position:absolute;left:49%;top:22%;width:4px;height:24px;border-radius:100px;background:#f8e4ff;transform:translateX(-50%);box-shadow:0 0 6px #ddacff}
-.shop-butterfly .bf-wing{position:absolute;top:3px;left:50%;width:24px;height:30px;background:linear-gradient(130deg,rgba(254,241,255,.95),rgba(254,150,210,.83) 58%,rgba(153,220,255,.66));border:1px solid rgba(255,245,255,.9);border-radius:85% 25% 70% 20%;transform-origin:0 80%;animation:shopWings .26s ease-in-out infinite alternate}
-.shop-butterfly .bf-wing.right{transform:scaleX(-1);animation-name:shopWingsOther}
-@keyframes shopWings{from{transform:rotateY(12deg) rotate(-25deg) scaleX(.87)}to{transform:rotateY(57deg) rotate(-48deg) scaleX(.75)}}
-@keyframes shopWingsOther{from{transform:scaleX(-1) rotate(-25deg)}to{transform:scaleX(-.45) rotate(-48deg)}}
-
-
-
-
-
-
-
-
-.shop-lamp.left{left:10%}.shop-lamp.right{right:10%;animation-delay:-1s}@keyframes shopLamp{to{opacity:.52;transform:translateY(3px)}}
-
-
-
-
-@keyframes shopEmblemFloat{to{transform:translateY(-7px) rotate(6deg)}}
-
-
-
-
-#tiny-reality-scene.shop-departing{opacity:0!important;pointer-events:none!important;transition:opacity 1.1s ease!important}
-@media(max-width:700px){#shop-tiny-host{top:10%;left:4%;width:150px;height:115px;--shop-eye:50px}#shop-tiny-host #khung-mat{gap:12px!important}}
-@media(max-height:580px){#shop-tiny-host{top:7%;height:110px;--shop-eye:48px}}
-@media(prefers-reduced-motion:reduce){}
-
-/* Cửa hàng có đủ 9 sản phẩm: cuộn bên trong cảnh, giữ nguyên mắt Tiny và nền sao. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:700px){
- 
- 
- 
- 
- 
- 
- 
-}
-@media(max-height:580px) and (min-width:701px){}
-
-/* Popup sản phẩm Shopee */
-
-
-
-#shop-tiny-host{transition:left .82s cubic-bezier(.2,.82,.2,1),top .82s cubic-bezier(.2,.82,.2,1),transform .82s cubic-bezier(.2,.82,.2,1)!important;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:900px){.shop-modal-tiny-bubble{display:none!important;}}
-@media(max-width:430px){.shop-modal-info{text-align:center!important}}
-
-
-/* DA Labs: hoàn thiện phần cuối gian hàng, thống nhất với hai quầy. */
-
-
-
-
-
-
-
-@media(max-width:700px){
-  
-}
-
-
-
-
-
-
-
-
-
-@keyframes dalabsTwinkle{to{opacity:.22;transform:scale(.46)}}
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:700px){
- 
- 
- 
- 
- 
- 
- 
- 
-}
-@media(prefers-reduced-motion:reduce){}
-</style>
-
 <style id="tiny-reality-moon-rover-style">
 /* Toàn bộ cảnh robot dùng SVG+CSS+JS; không còn khung video hay ảnh nền đen. */
 #tiny-reality-scene .reality-moon-walk{
@@ -5835,134 +5679,15 @@ body > .share-aircraft-stand.share-takeoff {isolation:isolate;}
   #tiny-reality-scene .moon-rover-star{animation:none!important}
 }
 </style>
-<style id="tiny-shop-magical-upgrade">
-/* Inspired by CSS-based fireflies (yZhanWeather), pastel SVG flowers (Flower UI), star trails (Starfield).
-   Effects self-contained, positioned BEHIND shop content. No external dependency. */
-
-
-@keyframes shopMagicFirefly{0%{opacity:0;transform:translate3d(-8px,16px,0) scale(.55)}35%{opacity:.6}65%{opacity:.92}100%{opacity:.13;transform:translate3d(15px,-24px,0) scale(1.1)}}
-
-@keyframes shopMagicPetal{from{transform:translate3d(-11px,-6px,0) rotate(-15deg);opacity:.05}to{transform:translate3d(13px,18px,0) rotate(32deg);opacity:.48}}
-
-
-
-
-
-
-
-
-@keyframes shopMagGrow{to{stroke-dashoffset:0}}
-@keyframes shopMagBloom{from{opacity:.55;filter:brightness(.85)}to{opacity:1;filter:brightness(1.48)}}
-@keyframes shopMagLeaves{to{opacity:.55}}
-/* Tiny fairy lights just below the shop awning, kept away from item controls */
-
-
-@keyframes shopMagLight{from{opacity:.33;filter:drop-shadow(0 0 3px rgba(255,216,159,.3))}to{opacity:.94;filter:drop-shadow(0 0 9px rgba(255,244,182,.8))}}
-/* delicately lit bridge between shops and DA Labs footer */
-
-
-@keyframes shopMagBridge{to{opacity:.5;transform:translateY(-4px)}}
-
-
-
-
-
-
-
-@keyframes dalabsPetalFloat{to{opacity:.21;transform:translate3d(5px,-13px,0) rotate(10deg)}}
-
-@keyframes shopMagicLogoFloat{to{transform:translateY(-4px);filter:drop-shadow(0 0 24px rgba(102,238,247,.42))}}
-
-@media(max-width:800px){}
-@media(prefers-reduced-motion:reduce){}
-</style>
-
-<style id="tiny-dalabs-luminous-upgrade-v2">
-/* DA Labs luminous scene. Inspired by Auroral (CSS moving gradients) and Sparticles (slow glow points).
-   Bespoke CSS/SVG; no remote JS or assets. */
-@property --dalabs-border-a {syntax: '<angle>'; initial-value: 0deg; inherits: false;}
-
-
-
-
-
-
-
-@keyframes dalabsDreamAurora{0%{translate:-6% -3%;scale:.94;opacity:.43}50%{translate:4% 5%;scale:1.05;opacity:.8}100%{translate:12% -6%;scale:1.18;opacity:.55}}
-
-@keyframes dalabsBorderOrbit{to{--dalabs-border-a:360deg}}
-
-
-@keyframes dalabsDust{0%{opacity:.12;transform:scale(.55) translateY(5px)}50%{opacity:.9;transform:scale(1.4) translateY(-3px)}100%{opacity:.25;transform:scale(.75) translateY(-7px)}}
-
-
-@keyframes dalabsLinesGlide{to{stroke-dashoffset:-180}}
-
-@keyframes dalabsStarsPulse{to{opacity:.3}}
-
-
-
-
-
-@keyframes dalabsCometCross{0%,60%{opacity:0;translate:0 0}64%{opacity:.9}77%{opacity:.85}82%,100%{opacity:0;translate:125vw -90px}}
-
-@keyframes dalabsStarCrown{to{scale:1.2;opacity:.76}}
-
-
-
-
-
-
-@keyframes dalabsLogoOrbit{to{transform:rotate(360deg)}}
-@keyframes dalabsLogoHalo{to{transform:scale(1.1);opacity:.64;box-shadow:0 0 48px rgba(112,245,255,.49),inset 0 0 24px rgba(215,147,255,.35)}}
-@keyframes dalabsLogoHover{to{transform:translateY(-5px) rotate(2deg);filter:drop-shadow(0 0 31px rgba(122,247,254,.82))}}
-
-
-
-
-@keyframes dalabsDreamShimmer{from{background-position:200% 50%}to{background-position:-35% 50%}}
-
-
-@keyframes dalabsGlintSweep{to{left:calc(100% - 10px);box-shadow:0 0 16px 6px rgba(255,174,225,.76)}}
-
-
-
-
-@keyframes dalabsLinkSweep{0%,40%{left:-55%;opacity:0}45%{opacity:.8}75%,100%{left:128%;opacity:0}}
-@keyframes dalabsTikTokBreathe{to{box-shadow:0 0 24px rgba(89,251,255,.38),0 0 35px rgba(255,141,212,.22),inset 0 0 21px rgba(112,237,255,.13)}}
-
-/* Shop has subtle moving lights near its lower edge, but prices and buttons remain clear. */
-
-@media(max-width:700px){
- 
- 
- 
- 
- 
- 
- 
- 
- 
-}
-@media(prefers-reduced-motion:reduce){
- 
-}
-</style>
 <style id="tiny-performance-css">
 /* ===== Tiny performance layer: background rendering only ===== */
 /* Hidden scenes do not keep running dozens of offscreen CSS keyframes. */
 
 /* Lower GPU overdraw on touch devices: decorative glow toned down, signature Tiny eyes untouched. */
-.tiny-lite #shop-magical-field .shop-magical-firefly,
-.tiny-lite #shop-magical-field .shop-magical-petal,
-.tiny-lite .tiny-beauty-firefly { filter:none !important; }
 .tiny-lite 
 .tiny-lite 
 @media (max-width:700px) {
- .tiny-lite #shop-magical-field .shop-magical-firefly:nth-child(3n),
- .tiny-lite #shop-magical-field .shop-magical-petal:nth-child(3n),
- .tiny-lite #decor-beauty .tiny-beauty-firefly:nth-of-type(3n) {display:none !important;}
-}
+ }
 </style>
 
 <style id="tiny-mobile-extreme-css">
@@ -10961,11 +10686,10 @@ const SPRITES = [taoSprite(1.02, 140), taoSprite(.96, 136), taoSprite(1.08, 145)
 (() => {
   const scene = document.getElementById('tiny-reality-scene');
   const rover = document.getElementById('tiny-moon-rover');
-  const shop = null;
   if (!scene || !rover) return;
   let frame = 0, startedAt = 0, lastRoverFrame = 0;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const active = () => document.visibilityState === 'visible' && scene.classList.contains('reality-visible') && !shop?.classList.contains('shop-visible');
+  const active = () => document.visibilityState === 'visible' && scene.classList.contains('reality-visible');
   function putRover(t) {
     // Mặt trăng: điểm từ trái tới phải của Bezier bậc hai M(-80,292), Q(600,56), (1280,292).
     const x = -80 + 1360 * t;
@@ -11004,7 +10728,6 @@ const SPRITES = [taoSprite(1.02, 140), taoSprite(.96, 136), taoSprite(1.08, 145)
     }
   }
   new MutationObserver(sync).observe(scene, {attributes:true,attributeFilter:['class']});
-  if (shop) new MutationObserver(sync).observe(shop, {attributes:true,attributeFilter:['class']});
   document.addEventListener('visibilitychange', sync);
   sync();
 })();
